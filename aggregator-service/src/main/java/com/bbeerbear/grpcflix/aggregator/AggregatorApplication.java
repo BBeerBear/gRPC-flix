@@ -1,11 +1,11 @@
-package com.bbeerbear.grpcflix.movie;
+package com.bbeerbear.grpcflix.aggregator;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class MovieApplication {
+public class AggregatorApplication {
     public static void main(String[] args) {
-        SpringApplication.run(MovieApplication.class, args);
+        SpringApplication.run(AggregatorApplication.class, args);
     }
 }
