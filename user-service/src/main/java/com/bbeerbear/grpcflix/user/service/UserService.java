@@ -7,12 +7,12 @@ import com.bbeerbear.grpcflix.user.UserSearchRequest;
 import com.bbeerbear.grpcflix.user.UserServiceGrpc;
 import com.bbeerbear.grpcflix.user.repository.UserRepository;
 import io.grpc.stub.StreamObserver;
-import jakarta.transaction.Transactional;
 import net.devh.boot.grpc.server.service.GrpcService;
 import org.springframework.beans.factory.annotation.Autowired;
 
-@GrpcService
-public class UserService extends UserServiceGrpc.UserServiceImplBase {
+import javax.transaction.Transactional;
+
+@GrpcService public class UserService extends UserServiceGrpc.UserServiceImplBase {
 
     @Autowired
     private UserRepository repository;
